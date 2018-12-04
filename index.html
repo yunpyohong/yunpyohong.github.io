@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>웹사이트</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="js/jquery.min.js"></script>
+		<script>
+			$(function(){
+				$(".headC").click(function(){
+					$(".headB").stop().slideToggle("fast");
+				});
+			});
+		</script>
+		<style>
+			.listA .container{
+				display: flex;
+				flex-wrap: wrap;
+				max-width: 1000px;
+				margin: 30px auto;
+			}
+			.listA .photo{
+				min-height: 200px;
+				background-position: center;
+				background-size: cover;
+			}
+			.listA .text{
+				text-align: center;
+				padding-top: 30px;
+				padding-bottom: 30px;
+				background-color: aqua;
+				
+			}
+			.listA p{
+				font-size: 10px;
+				opacity: 0.7;
+				margin-top: 10px;
+			}
+			.listA a{
+				flex: 1;
+				margin: 10px;
+				display: block;
+				text-decoration: none;
+				color: inherit;
+				border: 1px solid #ddd;
+			}
+			.listA a:hover{
+				opacity: 0.7;
+			}
+			.listA article{
+				display: flex;
+				flex: 1 1 300px;
+			}
+		</style>
+    </head>
+    <body>
+		<header class="header">
+			<div class="container">
+				<div class="container_mini">
+					<a href="index.html" class="headA"><img src="images/bg_02.jpg"></a>
+					<button type="button" class="headC">
+						<span class="menu_toggle"></span>
+					</button>
+				</div>
+				<nav class="headB">
+					<ul>
+						<li><a href="about.html">ABOUT</a></li>
+						<li><a href="#">PORTFOLIO</a></li>
+						<li><a href="contact.html">CONTACT</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+        <section class="secA">
+            <div class="container">
+                <h1>PORTFOLIO</h1>
+            </div>
+        </section> 
+		<!-- 추가 시작 -->
+		<section class="listA">
+			<div class="container">				
+				<article>
+					<a href="#">
+						<div class="photo" style="background-image: url(images/pic_1.jpg)">
+						</div>
+						<div class="text">	
+							<p>홈페이지로 바로가기</p>
+						</div>
+					</a>
+				</article>
+				<article>
+					<a href="#">
+						<div class="photo" style="background-image: url(images/pic_2.jpg)">
+						</div>
+						<div class="text">	
+							<p>홈페이지로 바로가기</p>
+						</div>
+					</a>
+				</article>
+				<article>
+					<a href="#">
+						<div class="photo" style="background-image: url(images/pic_3.jpg)
+						">
+						</div>
+						<div class="text">	
+							<p>홈페이지로 바로가기</p>
+						</div>
+					</a>
+				</article>
+				<article>
+					<a href="#">
+						<div class="photo" style="background-image: url(images/pic_4.jpg)">
+						</div>
+						<div class="text">	
+							<p>자세히 보기</p>
+						</div>
+					</a>
+				</article>
+				<article>
+					<a href="#">
+						<div class="photo" style="background-image: url(images/pic_5.jpg)">
+						</div>
+						<div class="text">
+							<p>자세히 보기</p>
+						</div>
+					</a>
+				</article>
+				<article>
+					<a href="#">
+						<div class="photo" style="background-image: url(images/pic_6.jpg)">
+						</div>
+						<div class="text">		
+							<p>자세히 보기</p>
+						</div>
+					</a>
+				</article>
+			</div>
+		</section>
+		<!-- 추가 끝 -->
+		<footer class="footer">
+			<div class="container">
+				<div class="footC">
+					<p>E-mail. edoctorhong@naver.com</p>
+					<p>Copyright © 2018 by Jimmy Hong. All Rights Reserved</p>
+				</div>
+			</div>
+		</footer>
+   
+    </body>	
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
